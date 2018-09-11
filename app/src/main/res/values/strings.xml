@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FootballClub2GDK-Fight</string>
+    <string name="prev_match">Prev Match</string>
+    <string name="next_match">Next Match</string>
+    <string name="shots">Shots</string>
+    <string name="midlefield">Midlefield</string>
+    <string name="forward">Forward</string>
+    <string name="subtituties">Subtituties</string>
+    <string name="lineups">Lineups</string>
+    <string name="goalkeeper">Goalkeeper</string>
+    <string name="hometeam">homeTeam</string>
+    <string name="awayteam">awayTeam</string>
+    <string name="goals">Goals</string>
+    <string name="versus">VS</string>
+    <string name="defense">Defense</string>
+</resources>
