@@ -8,8 +8,4 @@
         android:id="@+id/action_next"
         android:icon="@drawable/next"
         android:title="@string/next_match" />
-    <item
-        android:id="@+id/action_ehe"
-        android:icon="@drawable/next"
-        android:title="@string/next_match" />
 </menu>
