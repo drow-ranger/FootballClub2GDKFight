@@ -46,10 +46,12 @@ class MainActivity : AppCompatActivity(), MainView, AnkoLogger {
         recycler_view.adapter = recyclerAdapter
         swipe_refresh.setColorSchemeResources(
                 android.R.color.holo_red_dark,
+                android.R.color.holo_orange_dark,
+                android.R.color.holo_orange_light,
                 android.R.color.holo_green_dark,
                 android.R.color.holo_blue_dark,
-                android.R.color.holo_orange_dark,
-                android.R.color.holo_blue_bright)
+                android.R.color.holo_blue_bright,
+                android.R.color.holo_purple)
 
         swipe_refresh.onRefresh {
             if (status == 1) {
