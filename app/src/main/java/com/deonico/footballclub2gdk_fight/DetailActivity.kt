@@ -21,9 +21,10 @@ class DetailActivity : AppCompatActivity(), DetailView {
     }
 
     private fun withDetail() {
-        date.text = event.eventDate ?: " "
+
+        date.text = changeFormatDate(strToDate(event.eventDate))
         team_home.text = event.strHomeTeam ?: " "
-        score_home.text = event.intHomeScore ?: " "
+        home_score.text = event.intHomeScore ?: " "
         home_formation.text = event.strHomeFormation ?: " "
         home_goal.text = parserGoal(event.strHomeGoal ?: " ")
         home_shot.text = event.intHomeShot?.toString()
@@ -32,9 +33,11 @@ class DetailActivity : AppCompatActivity(), DetailView {
         home_midlefield.text = parser(event.strHomeMidfield ?: " ")
         home_forward.text = parser(event.strHomeForward ?: " ")
         home_subtituties.text = parser(event.strHomeSubstitutes ?: " ")
+        home_yellowcard.text = parserFoul(event.strHomeYellowCards ?: " ")
+        home_redcard.text = parserFoul(event.strAwayRedCards ?: " ")
 
         team_away.text = event.strAwayTeam ?: " "
-        score_away.text = event.intAwayScore ?: " "
+        away_score.text = event.intAwayScore ?: " "
         away_formation.text = event.strAwayFormation ?: " "
         away_goal.text = parserGoal(event.strAwayGoal ?: " ")
         away_shot.text = event.intAwayShot?.toString()
@@ -43,6 +46,8 @@ class DetailActivity : AppCompatActivity(), DetailView {
         away_midlefield.text = parser(event.strAwayMidfield ?: " ")
         away_forward.text = parser(event.strAwayForward ?: " ")
         away_subtituties.text = parser(event.strAwaySubstitutes ?: " ")
+        away_yellowcard.text = parserFoul(event.strAwayYellowCards ?: " ")
+        away_redcard.text = parserFoul(event.strAwayRedCards ?: " ")
 
     }
 
@@ -52,6 +57,10 @@ class DetailActivity : AppCompatActivity(), DetailView {
 
     private fun parser(input: String): String {
         return input.replace("; ", "\n", false)
+    }
+
+    private fun parserFoul(input: String): String {
+        return input.replace(";", "\n", false)
     }
 
     override fun showTeamLogo(team: Team?) {

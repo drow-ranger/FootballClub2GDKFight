@@ -15,6 +15,23 @@ object TheSportDBApi {
                 .toString()
     }
 
+    fun getSpecificTeamByID(teamID: String?): String {
+        return Uri.parse(BuildConfig.BASE_URL).buildUpon()
+                .appendPath("api")
+                .appendPath("v1")
+                .appendPath("json")
+                .appendPath(BuildConfig.TSDB_API_KEY)
+                .appendPath("lookupteam.php")
+                .appendQueryParameter("id", teamID)
+                .build()
+                .toString()
+    }
+
+    fun getTeamDetail(idTeam: String?): String {
+        return BuildConfig.BASE_URL + "api/v1/json/${BuildConfig.TSDB_API_KEY}" + "/lookupteam.php?id="+idTeam
+
+    }
+
     fun getLeagues(): String {
         return Uri.parse(BuildConfig.BASE_URL).buildUpon()
                 .appendPath("api")
