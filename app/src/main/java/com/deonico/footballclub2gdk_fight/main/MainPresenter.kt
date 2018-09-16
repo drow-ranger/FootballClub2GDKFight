@@ -1,5 +1,8 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.main
 
+import com.deonico.footballclub2gdk_fight.api.ApiRepository
+import com.deonico.footballclub2gdk_fight.api.TheSportDBApi
+import com.deonico.footballclub2gdk_fight.model.*
 import com.google.gson.Gson
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread

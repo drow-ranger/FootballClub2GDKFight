@@ -1,4 +1,4 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.main
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -7,11 +7,12 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.TextView
-import com.bumptech.glide.Glide
+import com.deonico.footballclub2gdk_fight.R
+import com.deonico.footballclub2gdk_fight.detail.DetailActivity
+import com.deonico.footballclub2gdk_fight.model.Event
+import com.deonico.footballclub2gdk_fight.model.League
+import com.deonico.footballclub2gdk_fight.model.Team
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.match_detail.*
-import kotlinx.android.synthetic.main.match_list.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.jetbrains.anko.support.v4.onRefresh

@@ -1,4 +1,4 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.main
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -6,15 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import com.bumptech.glide.Glide
+import com.deonico.footballclub2gdk_fight.R
+import com.deonico.footballclub2gdk_fight.api.ApiRepository
+import com.deonico.footballclub2gdk_fight.api.TheSportDBApi
+import com.deonico.footballclub2gdk_fight.changeFormatDate
+import com.deonico.footballclub2gdk_fight.model.Event
+import com.deonico.footballclub2gdk_fight.model.TeamResponse
+import com.deonico.footballclub2gdk_fight.strToDate
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.match_detail.*
 import kotlinx.android.synthetic.main.match_list.view.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
-import kotlin.coroutines.experimental.coroutineContext
 
 class MainAdapter(private val context: Context,
                   private val events: List<Event>,

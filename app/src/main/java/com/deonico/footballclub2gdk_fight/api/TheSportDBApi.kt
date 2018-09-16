@@ -1,6 +1,7 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.api
 
 import android.net.Uri
+import com.deonico.footballclub2gdk_fight.BuildConfig
 
 object TheSportDBApi {
     fun getSpecificTeam(teamNameMain: String?): String {

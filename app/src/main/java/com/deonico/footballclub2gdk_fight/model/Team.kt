@@ -1,4 +1,4 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.model
 
 import com.google.gson.annotations.SerializedName
 

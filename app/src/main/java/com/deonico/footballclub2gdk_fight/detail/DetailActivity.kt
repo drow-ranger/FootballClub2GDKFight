@@ -1,8 +1,13 @@
-package com.deonico.footballclub2gdk_fight
+package com.deonico.footballclub2gdk_fight.detail
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.deonico.footballclub2gdk_fight.R
+import com.deonico.footballclub2gdk_fight.changeFormatDate
+import com.deonico.footballclub2gdk_fight.model.Event
+import com.deonico.footballclub2gdk_fight.model.Team
+import com.deonico.footballclub2gdk_fight.strToDate
 import kotlinx.android.synthetic.main.match_detail.*
 
 class DetailActivity : AppCompatActivity(), DetailView {
